@@ -6,3 +6,29 @@ php -r "unlink('composer-setup.php');"
 
 ### create proj
 create-project laravel/laravel sample-crud
+
+#### migrations
+php artisan migrate
+
+#### creating new migration
+php artisan make:migration create_products_table --create=products
+
+after adding tables use: php artisan migrate:refresh
+
+##### extensions
+laravel blade snippets
+laravel blade spacer
+lravel extra intellisense
+laravel artisan
+
+###### creating a conroller with the model
+
+php artisan make:controller ProductController --resource --model=Product
+
+location for creating route:::
+app-routes-webroutes for the controller
+
+location for ctreating the webpage layout:: 
+app-resources-views ....
+
+blade is a template eng
