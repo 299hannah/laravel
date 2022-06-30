@@ -40,6 +40,10 @@ class ProductController extends Controller
             'name' => 'required',
             'detail' => 'required'
         ]);
+        //create a new product in the database
+        Product::create($request->all());
+
+        //redirect the user and send friendly message
     }
 
     /**
