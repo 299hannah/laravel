@@ -21,14 +21,21 @@ laravel blade spacer
 lravel extra intellisense
 laravel artisan
 
-###### creating a conroller with the model
+###### creating a controller with the model
 
 php artisan make:controller ProductController --resource --model=Product
 
 location for creating route:::
 app-routes-webroutes for the controller
+app-Http-controllers for the controller
+
 
 location for ctreating the webpage layout:: 
 app-resources-views ....
 
 blade is a template eng
+
+###### creating a view template
+app-reources-views
+
+then back to controllers
