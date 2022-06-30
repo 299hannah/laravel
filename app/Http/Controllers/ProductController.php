@@ -44,7 +44,9 @@ class ProductController extends Controller
         Product::create($request->all());
 
         //redirect the user and send friendly message
+        return redirect()->route('products.index')->with('success','product created successfully')
     }
+
 
     /**
      * Display the specified resource.
