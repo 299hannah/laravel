@@ -9,7 +9,6 @@
 
     <title>My first laravel app</title>
 </head>
-<h4>My first laravel app</h4>
 <body>
     <div class="container">
         <br>

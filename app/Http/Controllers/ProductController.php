@@ -59,7 +59,8 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        //compact method
+        return view('products.show', compact('product'));
     }
 
     /**
@@ -70,7 +71,7 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        //
+        return view('products.edit', compact('product'));
     }
 
     /**
