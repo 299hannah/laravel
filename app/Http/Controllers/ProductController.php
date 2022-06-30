@@ -14,7 +14,10 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $products =Product::latest()->paginate(5);
+
+        //what product to display and what page we are on
+        return view('products.index', compact('products'))->with(request()->input('page'));
     }
 
     /**
