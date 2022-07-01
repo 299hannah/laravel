@@ -33,6 +33,7 @@ app-Http-controllers for the controller
 location for ctreating the webpage layout:: 
 app-resources-views ....
 
+
 blade is a template eng
 
 ###### creating a view template
