@@ -39,3 +39,12 @@ blade is a template eng
 app-reources-views
 
 then back to controllers
+
+#### create database seeders
+php artisan make:seeder ProductSeeder
+
+#### creating random users
+php artisan migrate:refresh --seed
+
+##### refreshing the database
+php artisan migrate:refresh
