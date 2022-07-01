@@ -83,7 +83,16 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        //
+        //validate input
+        $request->validate([
+            'name' => 'required',
+            'detail' => 'required'
+        ]);
+        //create a new product in the database
+        $product->update($request->all());
+
+        //redirect the user and send friendly message
+        return redirect()->route('products.index')->with('success','product updated successfully');
     }
 
     /**
@@ -94,6 +103,8 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
+        return redirect()->route('products.index')->with('success','product deleted successfully');
+
     }
 }
