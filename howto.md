@@ -48,3 +48,5 @@ php artisan migrate:refresh --seed
 
 ##### refreshing the database
 php artisan migrate:refresh
+
+php artisan serve
