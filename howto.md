@@ -55,3 +55,17 @@ php artisan serve
 
 ###### cloned project
 composer update
+
+##### laravel creating auth ui
+composer require laravel/ui
+
+<!-- outdatded -->
+<!-- ###### downloading auth with bootstrap -->
+<!-- php artisan ui bootstrap --auth -->
+
+###### creating jetstream
+composer require laravel/jetstream
+
+###### istalling livewire
+php artisan jetstream:install livewire
+
