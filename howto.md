@@ -36,7 +36,6 @@ app-resources-views ....
 
 blade is a template eng
 
-
 ###### creating a view template
 app-reources-views
 
