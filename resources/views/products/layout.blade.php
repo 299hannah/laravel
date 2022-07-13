@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +12,10 @@
     <title>My first laravel app</title>
 </head>
 <body>
+
     <div class="container">
         <br>
+
         <!-- defining layout called content -->
         @yield('content')
 

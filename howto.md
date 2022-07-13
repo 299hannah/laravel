@@ -6,6 +6,7 @@ php -r "unlink('composer-setup.php');"
 
 ### create proj
 create-project laravel/laravel sample-crud
+composer create-project --prefer-dist laravel/laravel sample-crud
 
 #### migrations
 php artisan migrate
@@ -68,4 +69,7 @@ composer require laravel/jetstream
 
 ###### istalling livewire
 php artisan jetstream:install livewire
+
+###### for profile
+php artisan storage:link
 
